@@ -1,0 +1,26 @@
+/* links */
+
+a {
+    text-decoration: none;
+  }
+  
+  .link-arrow {
+    color: var(--color-body);
+    font-weight: bold;
+  }
+  
+  .link-arrow.link-arrow-forward::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s ease;
+  }
+  
+  .link-arrow.link-arrow-backward::before {
+    content: "<--";
+    margin-right: 5px;
+  }
+  
+  .link-arrow:hover::after {
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,10 @@
+.stackSkills__heading{
+    display: flex;
+    min-height: 45px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color-primary); */
+    margin-bottom: 1.5rem;
+}
+
+
