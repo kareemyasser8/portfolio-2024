@@ -19,8 +19,8 @@ const celebrityDetails: ProjectData = {
   link: "https://celebrity-website.vercel.app/index.html",
   gitHubLink: "https://github.com/kareemyasser8/Celebrity-website",
   screenshots: [
-    celebrity1,
     celebrity2,
+    celebrity1,
     celebrity3,
     celebrity4,
     celebrity5,

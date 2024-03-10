@@ -10,10 +10,9 @@ const Contact = () => {
   const ICON_SIZE = 27
 
   return (
-    <section className="block ">
+    <section className="block" id="contact">
       <SectionHeading iconSrc={mobile} title="Contacts">
-        When looking to connect, feel free to reach out via email. You can also
-        find me on LinkedIn if that's more your style.
+        When looking to connect, feel free to reach out via these links
       </SectionHeading>
 
       <div className="contact__logos flex flex-wrap gap-10">

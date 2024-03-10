@@ -24,16 +24,16 @@ const Nav = () => {
           </div>
           <ul className="list nav__list collapsible__content">
             <li className="nav__item">
-              <Link href={"/"}>Projects</Link>
+              <Link href={"/#highlightedProjects"}>Projects</Link>
             </li>
             <li className="nav__item">
-              <Link href={"/"}>Skills</Link>
+              <Link href={"/#skills"}>Skills</Link>
             </li>
             <li className="nav__item">
+              <Link href={"/#contact"}>Contact</Link>
+            </li>
+            <li className="nav__item md:border-solid md:border  border-indigo-800 rounded-lg  md:px-3">
               <Link href={"/"}>Resume</Link>
-            </li>
-            <li className="nav__item">
-              <Link href={"/"}>Contact</Link>
             </li>
           </ul>
         </div>

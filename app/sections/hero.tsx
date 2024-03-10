@@ -1,10 +1,6 @@
 import React from "react"
 import Image from "next/image"
 import "./hero.css"
-import labtop from "../../public/assets/Labtop.png"
-import labtop1p from "../../public/assets/resized/labtop@1x.png"
-import labtop2p from "../../public/assets/resized/Labtop@2x.png"
-import labtop1 from "../../public/assets/labtop@1x.webp"
 import labtop2 from "../../public/assets/labtop@2x.webp"
 import { LeftIllustration, RightIllustration } from "../components/svgs"
 

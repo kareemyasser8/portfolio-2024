@@ -6,7 +6,7 @@ import { frontEndSkills, backEndSkills} from "@/app/data/skills"
 
 const TechnicalSkills = () => {
   return (
-    <section className="block">
+    <section className="block" id="skills">
       <SectionHeading iconSrc={toolsIcon} title="Technical Skills">
         Those are the most technologies I am familiar with
       </SectionHeading>

@@ -26,8 +26,8 @@ export interface ProjectData{
 
 export const highlightedProjects : ProjectData[] = [
     legoDetails,
-    gameHubDetails,
-    miniTwitterDetails
+    miniTwitterDetails,
+    gameHubDetails
 ]
 
 export const otherProjects: ProjectData[] = [

@@ -22,9 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <link rel="shortcut icon" href={icon.src} />
       <body className={inter.className}>
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+  
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+
       </body>
     </html>
   )

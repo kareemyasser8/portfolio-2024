@@ -13,36 +13,104 @@ import { IoLogoJavascript } from "react-icons/io5"
 import { BsGit } from "react-icons/bs"
 
 import { technologyIcon } from "@/app/data/skills"
+import Motion from "../Motion"
 
 interface Props {
   skillIcon: technologyIcon
   stackType: "Front end Skills" | "Back end Skills"
 }
 
-const Skill_Icon = ({skillIcon, stackType}: Props) => {
+const Skill_Icon = ({ skillIcon, stackType }: Props) => {
+  const ICON_SIZE = 50
 
-  const ICON_SIZE = 50;
-
-  const icons:{ [key: string]: React.JSX.Element } = {
-    "Angular": <FaAngular size={ICON_SIZE} color={skillIcon.color} className="icon-white"/>,
-    "React": <FaReact size={ICON_SIZE} color={skillIcon.color} className="icon-white"/>,
-    "HTML": <FaHtml5 size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "CSS": <SiCss3 size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "Java script": <IoLogoJavascript size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "Type script": <SiTypescript size={ICON_SIZE} color={skillIcon.color}  className="icon-white"/>,
-    "Git": <BsGit size={ICON_SIZE} color={skillIcon.color} className="icon-white"/>,
-    "Node js": <FaNodeJs size={ICON_SIZE} color={skillIcon.color} className="icon-white"/>,
-    "Express": <SiExpress size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "Mongo DB": <SiMongodb size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "MYSQL": <SiMysql size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
-    "Postman": <SiPostman size={ICON_SIZE} color={skillIcon.color} className="icon-white" />,
+  const icons: { [key: string]: React.JSX.Element } = {
+    Angular: (
+      <FaAngular
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    React: (
+      <FaReact
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    HTML: (
+      <FaHtml5
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    CSS: (
+      <SiCss3 size={ICON_SIZE} color={skillIcon.color} className="icon-white" />
+    ),
+    "Java script": (
+      <IoLogoJavascript
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    "Type script": (
+      <SiTypescript
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    Git: (
+      <BsGit size={ICON_SIZE} color={skillIcon.color} className="icon-white" />
+    ),
+    "Node js": (
+      <FaNodeJs
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    Express: (
+      <SiExpress
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    "Mongo DB": (
+      <SiMongodb
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    MYSQL: (
+      <SiMysql
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    Postman: (
+      <SiPostman
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
   }
-  
+
   return (
-    <div className={`skill_icon ${stackType == "Back end Skills"? `backend` : `frontend`}`}>
-      {icons[skillIcon.name]}
-      <p>{skillIcon.name}</p>
-    </div>
+      <div
+        className={`skill_icon ${
+          stackType == "Back end Skills" ? `backend` : `frontend`
+        }`}
+      >
+        {icons[skillIcon.name]}
+        <p>{skillIcon.name}</p>
+      </div>
   )
 }
 
