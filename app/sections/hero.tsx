@@ -1,12 +1,13 @@
 import React from "react"
 import Image from "next/image"
 import "./hero.css"
-import labtop2 from "../../public/assets/labtop@2x.webp"
+import labtop2 from "../../public/assets/Labtop@2x.webp";
 import { LeftIllustration, RightIllustration } from "../components/svgs"
 
 const Hero = () => {
   return (
     <section className="hero block">
+
       <LeftIllustration className="hero__leftIllustration" />
       <RightIllustration className="hero__rightIllustration" />
       <div className="md:pt-32 pt-20 grid md:grid-cols-12 sm:grid-cols-1 gap-9">
