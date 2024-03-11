@@ -1,7 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-// import icon from "../public/assets/KY_Thumbnail.webp"
+import icon from "../public/KY_Thumbnail.webp"
 import Footer from "./components/footer/footer"
 import Nav from "./components/nav/nav"
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href={'/KY_Thumbnail.webp'} />
+      <link rel="shortcut icon" href={icon.src} />
       <body className={inter.className}>
         <Nav />
         <main>{children}</main>
