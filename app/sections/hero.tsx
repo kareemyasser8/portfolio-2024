@@ -18,20 +18,13 @@ const Hero = () => {
           </h1>
 
           <p className="hero__paragraph">
-            I&apos;m committed to building web applications that solve real-world
-            problems, focusing on user experience with React and Angular
+            I&apos;m committed to building web applications that solve
+            real-world problems, focusing on user experience with React and
+            Angular
           </p>
         </div>
 
         <div className="col-span-7 flex justify-center">
-          {/* <picture>
-            <source type="image/webp" srcSet={`${labtop1.src} 1x, ${labtop2.src} 2x`} />
-            <source
-              type="image/png"
-              srcSet={`${labtop1p.src} 1x, ${labtop2p.src} 2x`}
-            />
-            <Image className="hero__image" src={labtop2} alt="labtop" priority ></Image>
-          </picture> */}
           <Image
             className="hero__image"
             src={labtop2}
