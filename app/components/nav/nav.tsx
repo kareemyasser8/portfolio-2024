@@ -12,7 +12,7 @@ const Nav = () => {
       <div className="nav-spacer"></div>
       <nav
         className={`nav collapsible ${
-          isExpanded ? "" : "collapsible--expanded"
+          isExpanded ? "collapsible--expanded" : ""
         } `}
       >
         <div className="nav__content">
@@ -32,8 +32,8 @@ const Nav = () => {
             <li className="nav__item">
               <Link href={"/#contact"}>Contact</Link>
             </li>
-            <li className="nav__item md:border-solid md:border  border-indigo-800 rounded-lg  md:px-3">
-              <Link href={"/"}>Resume</Link>
+            <li className="nav__item md:border-solid md:border  border-indigo-800 rounded-lg hover:bg-indigo-800 md:px-3">
+              <Link target="__blank" href={"https://drive.google.com/file/d/1Zwsg38NsjZKUh4ydc2gmJQRkm7NAZpeq/view?usp=sharing"}>Resume</Link>
             </li>
           </ul>
         </div>
