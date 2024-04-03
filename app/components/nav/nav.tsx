@@ -7,6 +7,22 @@ import Link from "next/link"
 const Nav = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
+  const toggleMenu = () => setIsExpanded(!isExpanded)
+  const menuItems = [
+    {
+      content: "Projects",
+      href: "/#highlightedProjects",
+    },
+    {
+      content: "Skills",
+      href: "/#skills",
+    },
+    {
+      content: "Contact",
+      href: "/#contact",
+    },
+  ]
+
   return (
     <header>
       <div className="nav-spacer"></div>
@@ -19,21 +35,28 @@ const Nav = () => {
           <Link href={"/"}>
             <KYLogo className="size-20 " />
           </Link>
-          <div className="menu_btn" onClick={() => setIsExpanded(!isExpanded)}>
+          <div className="menu_btn" onClick={toggleMenu}>
             <Menu className="size-14 nav__toggler" />
           </div>
+
           <ul className="list nav__list collapsible__content">
-            <li className="nav__item">
-              <Link href={"/#highlightedProjects"}>Projects</Link>
-            </li>
-            <li className="nav__item">
-              <Link href={"/#skills"}>Skills</Link>
-            </li>
-            <li className="nav__item">
-              <Link href={"/#contact"}>Contact</Link>
-            </li>
+            {menuItems.map((item, index) => (
+              <li key={index} className="nav__item">
+                <Link href={item.href}>
+                  <div onClick={toggleMenu}>{item.content}</div>
+                </Link>
+              </li>
+            ))}
+
             <li className="nav__item md:border-solid md:border  border-indigo-800 rounded-lg hover:bg-indigo-800 md:px-3">
-              <Link target="__blank" href={"https://drive.google.com/file/d/1Zwsg38NsjZKUh4ydc2gmJQRkm7NAZpeq/view?usp=sharing"}>Resume</Link>
+              <Link
+                target="__blank"
+                href={
+                  "https://drive.google.com/file/d/1Zwsg38NsjZKUh4ydc2gmJQRkm7NAZpeq/view?usp=sharing"
+                }
+              >
+                <div onClick={toggleMenu}>Resume</div>
+              </Link>
             </li>
           </ul>
         </div>
