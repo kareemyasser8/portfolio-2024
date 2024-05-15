@@ -1,3 +1,7 @@
+:root{
+  --illustrationOpacity: 1;
+}
+
 .hero {
   /* border: 1px solid red; */
   overflow: hidden;
@@ -27,7 +31,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: var(--illustrationOpacity);
   }
 
   .hero__rightIllustration {
@@ -35,7 +39,7 @@
     position: absolute;
     right: 0;
     top: -90px;
-    opacity: 0.3;
+    opacity: var(--illustrationOpacity);
     z-index: -1;
   }
 }
@@ -62,16 +66,11 @@
     background-color: var(--color-secondary);
     position: absolute;
     z-index: -1;
-    opacity: 0.35;
+    opacity: 0.95;
     right: 6rem;
     top: 8rem;
-    /* left: 0;
-      top: 200px; */
-    /* transform: rotate(15deg); */
-    overflow: hidden;
-    /* top: 20rem;
-      left:16rem; */
-    filter: blur(80px);
+    /* overflow: hidden; */
+    filter: blur(35px);
   }  
 }
 
@@ -86,9 +85,8 @@
     right: 6rem;
     top: 12rem;
     filter: blur(80px);
-    opacity: 0.25;
+    opacity: 0.95;
   }
-  
 }
 
 
