@@ -37,11 +37,13 @@ const ProjectDetails = ({ project }: Props) => {
       </div>
 
       <div className="mt-5 project__actions__contianer">
-        <Link href={project.link} target="__blank">
-          <Button secondary block large rounded>
-            Open website
-          </Button>
-        </Link>
+        {project.link && (
+          <Link href={project.link} target="__blank">
+            <Button secondary block large rounded>
+              Open website
+            </Button>
+          </Link>
+        )}
 
         <Link href={project.gitHubLink} target="__blank">
           <div className="circle__container">

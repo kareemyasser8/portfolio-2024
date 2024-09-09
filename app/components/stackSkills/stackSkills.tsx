@@ -1,9 +1,9 @@
-import React from "react"
-import "./stackSkills.css"
-import Skill_Icon from "../skill_Icon/skill_Icon"
-import { technologyIcon } from "@/app/data/skills"
-import Motion from "../Motion"
-import FadeInDiv from "../FadeInDiv"
+import './stackSkills.css';
+
+import { technologyIcon } from '@/app/data/skills';
+import React from 'react';
+import FadeInDiv from '../FadeInDiv';
+import Skill_Icon from '../skill_Icon/skill_Icon';
 
 interface Props {
   stackType: "Front end Skills" | "Back end Skills"

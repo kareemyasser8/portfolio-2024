@@ -5,11 +5,15 @@ export interface technologyIcon{
 
 export const frontEndSkills: technologyIcon[] =[
     {name: "React", color: "61DBFB"},
+    {name: "React Native", color: "61DBFB"},
+    {name: "Next js", color: "fff"},
     {name: "Angular", color: "c3002f"},
     {name: "HTML", color: "f06529"},
     {name: "CSS", color: "264de4"},
     {name: "Java script", color: "F0DB4F"},
     {name: "Type script", color: "3178c6"},
+    {name: "Expo", color: "fff"},
+    {name: "React Testing Library", color: "FF4162"},
 ]
 
 export const backEndSkills: technologyIcon[] =[

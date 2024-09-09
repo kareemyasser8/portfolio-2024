@@ -52,7 +52,7 @@ const Nav = () => {
               <Link
                 target="__blank"
                 href={
-                  "https://drive.google.com/file/d/1WhiyOjB2T-nSHoobvdf5ZYVpn1PDGU7C/view?usp=sharing"
+                  "https://drive.google.com/file/d/1RB64Mpw_YadgFvSp_sVk3pJqhenVvnHc/view?usp=sharing"
                 }
               >
                 <div onClick={toggleMenu}>Resume</div>

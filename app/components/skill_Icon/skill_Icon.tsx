@@ -8,7 +8,11 @@ import {
   SiMongodb,
   SiMysql,
   SiPostman,
+  SiTestinglibrary,
+  SiExpo,
+  SiNextdotjs
 } from "react-icons/si"
+
 import { IoLogoJavascript } from "react-icons/io5"
 import { BsGit } from "react-icons/bs"
 
@@ -33,6 +37,20 @@ const Skill_Icon = ({ skillIcon, stackType }: Props) => {
     ),
     React: (
       <FaReact
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    "React Native": (
+      <FaReact
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    "Next js": (
+      <SiNextdotjs 
         size={ICON_SIZE}
         color={skillIcon.color}
         className="icon-white"
@@ -100,6 +118,20 @@ const Skill_Icon = ({ skillIcon, stackType }: Props) => {
         className="icon-white"
       />
     ),
+    Expo: (
+      <SiExpo
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    ),
+    "React Testing Library": (
+      <SiTestinglibrary
+        size={ICON_SIZE}
+        color={skillIcon.color}
+        className="icon-white"
+      />
+    )
   }
 
   return (
